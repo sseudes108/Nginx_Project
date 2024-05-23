@@ -21,7 +21,9 @@
 ---
 <h4>Informações Relevantes / Documentação</h4>
 
-**Documentação do Projeto em Nginx**</br>
+<div  align="center">
+    **Documentação do Projeto em Nginx**</br>
+</div>
 O atual documento descreve as configurações realizadas em um ambiente local (localhost) para simular vários servidores físicos. Os serviços "financeiro" e "administrativo" foram replicados em dois endereços no servidor, cada um acessível por sua própria porta. A configuração e endereçamento podem ser consultados no arquivo "services.conf".
 
 **Balanceamento de Acesso**</br>
