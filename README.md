@@ -19,14 +19,9 @@
     **Documentação:** Documente a configuração e as decisões tomadas durante o projeto<br>
 
 ---
-<h4>Informações Relevantes / Documentação</h4>
+<h4 align="center">Documentação</h4>
 
-<div  align="center">
-    <strong>Documentação do Projeto em Nginx</strong>
-</div>
-</br>
 O atual documento descreve as configurações realizadas em um ambiente local (localhost) para simular vários servidores físicos. Os serviços "financeiro" e "administrativo" foram replicados em dois endereços no servidor, cada um acessível por sua própria porta. A configuração e endereçamento podem ser consultados no arquivo "services.conf".
-</br>
 
 **Balanceamento de Acesso**</br>
 O balanceamento de acesso foi implementado individualmente para cada serviço, utilizando um load balancer. O upstream organiza as portas e redireciona as requisições para o servidor com menor carga, utilizando o balanceamento round-robin com o método "least_conn". Esse método redireciona o acesso para o servidor com o menor número de conexões ativas no momento. As configurações específicas podem ser encontradas nos arquivos "load_financeiro.conf" e "load_administrativo.conf".
